@@ -1,5 +1,6 @@
 ---
-title: "test"
+title: "Coursera: Reproducible Research: Course Project 1"
+author: Bhavani Balabhadra
 output: html_document
 ---
 
@@ -15,8 +16,8 @@ Show any code that is needed to
 
 2. Process/transform the data (if necessary) into a format suitable for your analysis
 
-```{r}
-act <- read.table("activity.csv", sep=",", header = TRUE, stringsAsFactors = FALSE)
+```{r echo=TRUE}
+act <- read.csv("activity.csv", sep=",", header = TRUE, stringsAsFactors = FALSE)
 str(act)
 act$date1 <- as.Date(act$date, "%Y-%m-%d")
 head(act)
@@ -38,15 +39,18 @@ library(dplyr)
 df <- filter(act, is.na(act$steps) == FALSE)
 dfSum <- dplyr::summarise(group_by(df, date1), sum(steps))
 names(dfSum) <- c("Date", "TotSteps")
-head(names)
+head(dfSum)
 
 #Displaying the data on histogram
 hist(dfSum$TotSteps, breaks=30, main="Historgram of Number of Steps", xlab="Steps", col="green", las=1)
 
 #Calculating mean and median steps taken per day
 library(plyr)
-ddply(df, .(date1), summarize, "mean"=mean(steps), "median"=median(steps))
+mean <- mean(df$steps)
+median <- median(df$steps)
 ```
+
+Mean and Median steps taken per day are `r mean` and `r median` respectively.
 
 ###What is the average daily activity pattern?
 

@@ -1,0 +1,155 @@
+exit
+quit
+x <- 1
+print x
+print(x)
+msg <- "hello"
+print(msg)
+msg <- "hello", "world"
+msg <- ()"hello", "world")
+msg <- ("hello", "world")
+x <- 1:20
+print(x)
+x
+msg
+msg <- c("hello", "world")
+msg
+msg(1)
+msg[1]
+msg[0]
+msg[1:2]
+x<- 0:6
+x
+as.logical(x)
+x
+as.character(as.logical(x))
+x <- list(1,"a", TRUE, 1+4i)
+x
+x[4]
+x[5]
+m <- matrix(nrow=2, ncol=3)
+m
+attributes(m)
+dim
+dim(m)
+m <- matrix(1:6, nrow=2, ncol=3)
+m
+x <1:3
+x <- 1:3
+y <- 10:12
+dim(m) <- cbind(x, y)
+cbind(x, y
+)
+rbind(x,y)
+x <- factor(c("yes", "yes", "no", "yes","no"))
+x
+table(x)
+attr(,"levels")
+unclass(x)
+y <- factor(c("wrong","right","no","wrong","wrong","right"))
+unclass(y)
+table(y)
+y <- factor(c("wrong","right","no","wrong","wrong","right"), levels = c("wrong","right","no"))
+y
+unclass(y)
+x <- c(1,2,na,10,3)
+x <- c(1,2,NA,10,3)
+x
+is.na(x)
+is.nan(x)
+x <- c(1,2,NA,Nan,10,3)
+x <- c(1,2,NA,NaN,10,3)
+is.nan(x)
+is.na(x)
+x <- data.frame(foo=1:4, bar=c(T,T,F,F))
+x
+nrow(x)
+ncol(x)
+x[1,1]
+x[1,2]
+x[3,2]
+x(foo)
+names(x)
+add2 <- function(x, y) { x+y}
+add2(3,4)
+library(httr)
+oauth_endpoints("github")
+myapp <- oauth_app("github",#
+key = "ed2d2d7c9d27dcc45421",#
+secret = "b27be103d60d2c0c8b16668ffe5064aff064db23")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gitub_token
+github_token
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)#
+stop_for_status(req)#
+content(req)
+install.packages("httpuv")
+library(httr)
+library(httpuv)
+oauth_endpoints("github")
+myapp <- oauth_app("github",#
+key = "81abcb4c67a012684802699b9428dd54a0553439",#
+secret = "b27be103d60d2c0c8b16668ffe5064aff064db23")
+myapp
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+github_token
+gtoken <- config(token = github_token)
+gtoken
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)
+remove(github_token)
+list()
+ls
+rm(list=ls())
+library(httpuv)
+library(http)
+library(httr)
+oauth_endpoints("github")
+gtoken <- config(token = github_token)
+myapp <- oauth_app("github",#
+key = "81abcb4c67a012684802699b9428dd54a0553439",#
+secret = "b27be103d60d2c0c8b16668ffe5064aff064db23")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)
+gtoken
+myapp
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)
+q
+q()
+x <- rnorm(100)
+hist(x)
+y <- rnorm(100)
+plot(x,y)
+z <- rnorm(100)
+plot(x,z)
+plot(x,y)
+par(mar=c(2,2,2,2))
+plot(x,y)
+par(mar=c(1,1,1,1))
+plot(x,y)
+par(mar=c(4,4,4,4))
+plot(x,y)
+plot(x,y pch=20)
+plot(x,y ,pch=20)
+dev.off()
+a <- available.packages()
+install.packages("KenSmooth")
+a
+dim(a)
+a
+install.packages("KenSmooth")
+install.packages("KernSmooth")
+utils::menuInstallPkgs()
+install.packages("KernSmooth")
+library(KernSmooth)
+q()
+save.image()
+?knit2html
+??knit2html
+knit2html("./PA1_template.Rmd")
+library(knitr)
+knit2html("./PA1_template.Rmd")
+quit
+exit
+q
+quit()
